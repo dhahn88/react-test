@@ -6,10 +6,11 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/movie/:id">
+        {/* ${process.env.PUBLIC_URL} */}
+        <Route path={`/movie/:id`}>
           <Detail />
         </Route>
-        <Route path="/">
+        <Route path={`/`}>
           <Home />
         </Route>
       </Switch>
